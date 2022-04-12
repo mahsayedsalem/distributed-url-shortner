@@ -2,15 +2,15 @@
   Shortening
 </h1>
 
-<h4 align="center">Distributed URL Shortner</h4>
+<h4 align="center">Distributed URL Shortener</h4>
 
 <p align="center">
-  <a href="#key-features">Key Features</a> •
+  <a href="#target-key-features">Target Key Features</a> •
   <a href="#target-architecture">Target Architecture</a> •
-  <a href="#design-decisions">Design Decisions</a>
+  <a href="#design-decisions">Design Decisions</a> •
 </p>
 
-## Key Features
+## Target Key Features
 
 * User Profile 👤 - Keep your shortened URLs in your profile.
 * Analytics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📈 - Click-based Statistics on all your URLs.
@@ -19,7 +19,7 @@
 
 ## Target Architecture
 
-![ScreenShot](/images/url-shortner-diagram-detailed.png)
+![ScreenShot](/images/url-shortner-diagram-apis-added.png)
 
 ## Design Decisions
 
