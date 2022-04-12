@@ -6,8 +6,8 @@
 
 <p align="center">
   <a href="#key-features">Key Features</a> •
-  <a href="#targer-architecture">Target Architecture</a> •
-  <a href="#stack-decisions">Stack Decisions</a>
+  <a href="#target-architecture">Target Architecture</a> •
+  <a href="#design-decisions">Design Decisions</a>
 </p>
 
 ## Key Features
@@ -21,9 +21,12 @@
 
 ![ScreenShot](/images/url-shortner-diagram.png)
 
-## Stack Decisions
+## Design Decisions
+
+### Technologies
+
 * Java/Spring Framework as a primary development language.
-* MongoDB as a source of truth since it's Optimized for reads. Our read/write ratio could reach 200/1. 
+* MongoDB as a source of truth since it's optimized for reads. Our read/write ratio could reach 200/1. 
 * Redis as a Caching Database. We will cache 20% of the most visited URLs.
 * We will publish to Kafka on every redirect: {SHORT-URL,  URL, USER}. These messages are going to be aggregated using KSQL.
 * Implement CQRS on the Critical Services (Redirector - Convertor - Generator).
@@ -32,4 +35,13 @@
 * Docker-compose for services development.
 * Github Actions as our main CI/CD Tool. 
 * Terraform as IaaC. 
-* AWS ECS as main Cloud Provider. 
+* AWS ECS as a main Cloud Provider.
+
+### Key Generation Service
+* Key Generation Service (Generator) generates random six-letter strings beforehand and stores them in a database.
+* Whenever we want to shorten a URL, the Convertor will call the Genartor and take one of the already-generated keys and use it.
+* The Generator will use two tables to store keys: one for keys that are not used yet, and one for all the used keys.
+* The Generator will always push some Keys to a Kafka topic, where Convertor instances will consume from.
+
+### Cache Eviction Policy
+Least Recently Used (LRU) is going to be the eviction policy for our system. Under this policy, we discard the least recently used URL first.
