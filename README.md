@@ -19,7 +19,7 @@
 
 ## Target Architecture
 
-![ScreenShot](/images/url-shortner-diagram.png)
+![ScreenShot](/images/url-shortner-diagram-detailed.png)
 
 ## Design Decisions
 
