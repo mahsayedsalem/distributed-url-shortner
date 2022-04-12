@@ -25,7 +25,7 @@
 * Java/Spring Framework as a primary development language.
 * MongoDB as a source of truth since it's Optimized for reads. Our read/write ratio could reach 200/1. 
 * Redis as a Caching Database. We will cache 20% of the most visited URLs.
-* We will publish to Kafka on every visit: {SHORT-URL,  URL, USER}. These info are going to be aggregated using KSQL.
+* We will publish to Kafka on every redirect: {SHORT-URL,  URL, USER}. These messages are going to be aggregated using KSQL.
 * Implement CQRS on the Critical Services (Redirector - Convertor - Generator).
 * Docker to containerize our services. 
 * Kubernetes for orchestration, secrets, discovery, load balancing and configs. 
