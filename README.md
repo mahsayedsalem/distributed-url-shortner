@@ -15,7 +15,7 @@
 * User Profile 👤 - Keep your shortened URLs in your profile.
 * Analytics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;📈 - Click-based Statistics on all your URLs.
 * Distributed&nbsp;  🚀 - Can handle huge number of reads/writes.
-* Caching &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🏪 - Cache the 20% most visited shortened URLs.
+* Caching &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🏪 - Cache the 20% most visited shortened URLs.
 
 ## Target Design
 
