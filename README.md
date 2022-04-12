@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="#key-features">Key Features</a> •
-  <a href="#targer-design">Target Design</a> •
+  <a href="#targer-architecture">Target Architecture</a> •
   <a href="#stack-decisions">Stack Decisions</a>
 </p>
 
@@ -17,7 +17,7 @@
 * Distributed&nbsp;  🚀 - Can handle huge number of reads/writes.
 * Caching &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🏪 - Cache the 20% most visited shortened URLs.
 
-## Target Design
+## Target Architecture
 
 ![ScreenShot](/images/url-shortner-diagram.png)
 
