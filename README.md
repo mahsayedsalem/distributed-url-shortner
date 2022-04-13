@@ -19,7 +19,7 @@
 
 ## Target Architecture
 
-![ScreenShot](/images/url-shortner-diagram-apis-added.png)
+![ScreenShot](/images/url-shortner-diagram-full-stack.png)
 
 ## Design Decisions
 
@@ -35,6 +35,7 @@
 * Docker-compose for services development.
 * Github Actions as our main CI/CD Tool. 
 * Terraform as IaaC. 
+* ELK stack as a centeralised logg
 * AWS ECS as a main Cloud Provider.
 
 ### Key Generation Service
