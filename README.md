@@ -33,9 +33,10 @@
 * Docker to containerize our services. 
 * Kubernetes for orchestration, secrets, discovery, load balancing and configs. 
 * Docker-compose for services development.
+* ELK stack for Logs Management.
+* Prometheus for Monitoring and Alerting.
 * Github Actions as our main CI/CD Tool. 
-* Terraform as IaaC. 
-* ELK stack as a centeralised logg
+* Terraform as IaaC.
 * AWS ECS as a main Cloud Provider.
 
 ### Key Generation Service
