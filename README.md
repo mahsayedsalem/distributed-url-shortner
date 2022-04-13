@@ -19,7 +19,7 @@
 
 ## Target Architecture
 
-![ScreenShot](/images/url-shortner-diagram-full-stack.png)
+![ScreenShot](/images/arch-v1.png)
 
 ## Design Decisions
 
