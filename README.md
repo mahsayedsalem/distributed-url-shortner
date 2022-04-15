@@ -19,7 +19,7 @@
 
 ## Target Architecture
 
-![ScreenShot](/images/arch-v1.png)
+![ScreenShot](/images/arch-v2.png)
 
 ## Design Decisions
 
@@ -28,7 +28,7 @@
 * Java/Spring Framework as a primary development language.
 * MongoDB as a source of truth since it's optimized for reads. Our read/write ratio could reach 200/1. 
 * Redis as a Caching Database. We will cache 20% of the most visited URLs.
-* We will publish to Kafka on every redirect: {SHORT-URL,  URL, USER}. These messages are going to be aggregated using KSQL.
+* We will publish to Kafka on every redirect: {SHORT-URL,  URL, USER}. These messages are going to be consumed and stored in a Cassandra database so we can query them for user stats.
 * Implement CQRS on the Critical Services (Redirector - Convertor - Generator).
 * Docker to containerize our services. 
 * Kubernetes for orchestration, secrets, discovery, load balancing and configs. 
