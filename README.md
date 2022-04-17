@@ -19,7 +19,7 @@
 
 ## Target Architecture
 
-![ScreenShot](/images/arch-v2.png)
+![ScreenShot](/images/arch-v3.png)
 
 ## Design Decisions
 
