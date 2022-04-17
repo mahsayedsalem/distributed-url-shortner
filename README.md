@@ -7,7 +7,7 @@
 <p align="center">
   <a href="#target-key-features">Target Key Features</a> •
   <a href="#target-architecture">Target Architecture</a> •
-  <a href="#design-decisions">Design Decisions</a> •
+  <a href="#design-decisions">Design Decisions</a>
 </p>
 
 ## Target Key Features
